@@ -28,7 +28,7 @@ format:
 
 
 .PHONY: run
-run:
+run: static
 	${MANAGE} runserver 0.0.0.0:8000
 
 
