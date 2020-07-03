@@ -1,0 +1,26 @@
+default:
+  ALLOWED_HOSTS: []
+  DATABASE_URL: ""
+  DEBUG: true
+  SECRET_KEY: ""
+
+development:
+  DEBUG: true
+  ALLOWED_HOSTS:
+    - 127.0.0.1
+    - localhost
+
+heroku:
+  ALLOWED_HOSTS:
+    - matanhelp.herokuapp.com
+    - 127.0.0.1
+    - localhost
+  DEBUG: 0
+
+travis:
+  DATABASE_URL: "postgresql://postgres@localhost:5432/sd"
+  DEBUG: true
+  SECRET_KEY: "xxx"
+  ALLOWED_HOSTS:
+    - 127.0.0.1
+    - localhost

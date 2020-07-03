@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+{% block title %}About{% endblock %}
+
+{% block main %}
+<div>
+    О проекте
+    <div\>
+    <h1>
+        Реальная помощь в решении заданий по высшей математике
+    </h1>
+    <p>
+        Используемые технологии:
+    </p>
+    <ul>
+        {% for tech in technologies %}
+        {% if tech.url %}
+            <a href="{{tech.url}}">
+                {% endif %}
+                <li>{{tech.name}}</li>
+                {% if tech.url %}
+            </a>
+                {% endif %}
+        {% endfor %}
+    </ul>
+{% endblock %}
