@@ -24,6 +24,7 @@ INSTALLED_APPS = [
     'apps.home',
     'apps.comments',
     'apps.about',
+    'apps.onboarding',
 ]
 
 MIDDLEWARE = [
